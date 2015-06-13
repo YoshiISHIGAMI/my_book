@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>表紙:</strong>
+  <%= @book.image %>
+</p>
+<p>
+  <strong>署名:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>著者:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>価格:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>出版社:</strong>
+  <%= @book.publisher %>
+</p>
+
+<p>
+  <strong>発売日:</strong>
+  <%= @book.saledate %>
+</p>
+
+<p>
+  <strong>ISBN:</strong>
+  <%= @book.isbn %>
+</p>
+
+<%= link_to '修正', edit_book_path(@book) %> |
+<%= link_to '戻る', books_path %>
